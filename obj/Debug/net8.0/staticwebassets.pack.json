@@ -1,0 +1,409 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApplication4.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebApplication4.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\Bakery.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Bakery.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\Blue Band.jpg",
+      "PackagePath": "staticwebassets\\Images\\Blue Band.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\DAIRY.jpeg",
+      "PackagePath": "staticwebassets\\Images\\DAIRY.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\Fruit.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Fruit.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\Fruits.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Fruits.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\GREENTEA.jpg",
+      "PackagePath": "staticwebassets\\Images\\GREENTEA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\JAR.png",
+      "PackagePath": "staticwebassets\\Images\\JAR.png"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\Milkpack.jpg",
+      "PackagePath": "staticwebassets\\Images\\Milkpack.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\Milkpack2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Milkpack2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\Nurpur butter.jpg",
+      "PackagePath": "staticwebassets\\Images\\Nurpur butter.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\SEVENUP.jpg",
+      "PackagePath": "staticwebassets\\Images\\SEVENUP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\Snacks.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Snacks.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\Vegetables.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Vegetables.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\WATERBEVERAGE.jpg",
+      "PackagePath": "staticwebassets\\Images\\WATERBEVERAGE.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\baby.jpeg",
+      "PackagePath": "staticwebassets\\Images\\baby.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\bakery.webp",
+      "PackagePath": "staticwebassets\\Images\\bakery.webp"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\beverages.jpeg",
+      "PackagePath": "staticwebassets\\Images\\beverages.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\care.jpeg",
+      "PackagePath": "staticwebassets\\Images\\care.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\hello.jpg",
+      "PackagePath": "staticwebassets\\Images\\hello.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\helloo.jpg",
+      "PackagePath": "staticwebassets\\Images\\helloo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\Images\\homee.jpeg",
+      "PackagePath": "staticwebassets\\Images\\homee.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\UploadedImages\\Blue Band.jpg",
+      "PackagePath": "staticwebassets\\UploadedImages\\Blue Band.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\UploadedImages\\JAR.png",
+      "PackagePath": "staticwebassets\\UploadedImages\\JAR.png"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\UploadedImages\\Milkpack.jpg",
+      "PackagePath": "staticwebassets\\UploadedImages\\Milkpack.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\UploadedImages\\Milkpack2.jpg",
+      "PackagePath": "staticwebassets\\UploadedImages\\Milkpack2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\UploadedImages\\SEVENUP.jpg",
+      "PackagePath": "staticwebassets\\UploadedImages\\SEVENUP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\UploadedImages\\care.jpeg",
+      "PackagePath": "staticwebassets\\UploadedImages\\care.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\UploadedImages\\donuts.jpeg",
+      "PackagePath": "staticwebassets\\UploadedImages\\donuts.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\css\\Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\Dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\css\\FRONTPAGE.css",
+      "PackagePath": "staticwebassets\\css\\FRONTPAGE.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\css\\Settings.css",
+      "PackagePath": "staticwebassets\\css\\Settings.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\css\\Signup_login.css",
+      "PackagePath": "staticwebassets\\css\\Signup_login.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\css\\Track.css",
+      "PackagePath": "staticwebassets\\css\\Track.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\css\\thanks.css",
+      "PackagePath": "staticwebassets\\css\\thanks.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Unknown\\OneDrive\\Desktop\\5th Semester\\WebApplication4\\WebApplication4\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApplication4.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebApplication4.props",
+      "PackagePath": "build\\WebApplication4.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication4.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication4.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebApplication4.props",
+      "PackagePath": "buildTransitive\\WebApplication4.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

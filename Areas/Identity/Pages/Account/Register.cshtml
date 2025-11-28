@@ -1,0 +1,111 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = " Grossbox Register";
+}
+<head>
+    <link rel="stylesheet" href="~/css/Signup_login.css" />
+</head>
+<body>
+    <h2 style="text-align:center; padding-top:30px;">@ViewData["Title"]</h2>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                    <h3 style="padding-left:30px;">Create a new account.</h3>
+                    <hr />
+                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                        <label asp-for="Input.Email">Email</label>
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select asp-for="Input.Role" class="form-control form-select" aria-required="true" required style="padding-top: 1.625rem; padding-bottom: 0.625rem;">
+                            <option value="" disabled selected>-- Select Your Role --</option>
+                            <option value="Admin">👤 Admin</option>
+                            <option value="Customer">🛒 Customer</option>
+                        </select>
+                        <label asp-for="Input.Role" class="form-label">
+                            Role <span class="text-danger">*</span>
+                        </label>
+                        <span asp-validation-for="Input.Role" class="text-danger"></span>
+                        <small class="form-text text-muted">Please select your role. This cannot be changed later.</small>
+                    </div>
+
+                    <div class="form-floating mb-3 position-relative">
+                        <input asp-for="Input.Password" type="password" id="registerPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <label asp-for="Input.Password">Password</label>
+                        <span class="position-absolute end-0 top-50 translate-middle-y pe-3" style="cursor: pointer; z-index: 10;" onclick="togglePassword('registerPassword', 'registerPasswordIcon')">
+                            <i id="registerPasswordIcon" class="bi bi-eye"></i>
+                        </span>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-3 position-relative">
+                        <input asp-for="Input.ConfirmPassword" type="password" id="confirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                        <span class="position-absolute end-0 top-50 translate-middle-y pe-3" style="cursor: pointer; z-index: 10;" onclick="togglePassword('confirmPassword', 'confirmPasswordIcon')">
+                            <i id="confirmPasswordIcon" class="bi bi-eye"></i>
+                        </span>
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="w-100 btn btn-lg btn-dark">Register</button><br />
+                    <div style="text-align: center; margin-top: 15px;">
+                        <p>
+                            Already registered? <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        select.form-select {
+            border: 2px solid #dee2e6;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        select.form-select:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+        select.form-select option {
+            padding: 10px;
+        }
+        select.form-select option[value=""] {
+            color: #6c757d;
+            font-style: italic;
+        }
+    </style>
+    <script>
+        function togglePassword(inputId, iconId) {
+            const input = document.getElementById(inputId);
+            const icon = document.getElementById(iconId);
+            
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove("bi-eye");
+                icon.classList.add("bi-eye-slash");
+            } else {
+                input.type = "password";
+                icon.classList.remove("bi-eye-slash");
+                icon.classList.add("bi-eye");
+            }
+        }
+        
+        // Validate role selection on form submit
+        document.getElementById('registerForm')?.addEventListener('submit', function(e) {
+            const roleSelect = document.querySelector('select[name="Input.Role"]');
+            if (!roleSelect || !roleSelect.value || roleSelect.value === '') {
+                e.preventDefault();
+                alert('Please select a role (Admin or Customer) before registering.');
+                roleSelect.focus();
+                return false;
+            }
+        });
+    </script>
+}

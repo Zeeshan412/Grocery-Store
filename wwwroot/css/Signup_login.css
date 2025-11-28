@@ -1,0 +1,9 @@
+body {
+    padding-top:10px;
+    background-repeat: no-repeat;
+    background-image: url('../images/hello.jpg');
+    background-size: 530px;
+    /* background-position-y: 100px; */
+    background-position: left;
+    background-color: #ffffff; /* White background */
+}

@@ -1,0 +1,68 @@
+﻿@model WebApplication4.Entities.CategoryProducts
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Add Product";
+}
+
+<h3 class="mb-4"><i class="bi bi-plus-circle"></i> Add New Product</h3>
+
+@if (TempData["ProductMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["ProductMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<form method="post" asp-area="" asp-controller="AddProduct" asp-action="AddProduct" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="productName" class="form-label">Product Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="productName" name="Name" placeholder="Enter product name" required>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="type" class="form-label">Category <span class="text-danger">*</span></label>
+                <select class="form-control" id="type" name="CategoryID" required>
+                    <option value="">Select Category</option>
+                    @foreach (var c in Model.Category)
+                    {
+                        <option value="@c.Id">@c.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="price" class="form-label">Price (PKR) <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="price" name="Price" placeholder="Enter product price" min="1" required>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="stock" class="form-label">Stock Quantity <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="stock" name="Stock" placeholder="Enter quantity in stock" min="0" required>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mb-3">
+        <label for="xyz" class="form-label">Product Image <span class="text-danger">*</span></label>
+        <input type="file" class="form-control" id="xyz" name="xyz" accept="image/*" required>
+        <small class="form-text text-muted">Please upload a product image (JPG, PNG, etc.)</small>
+    </div>
+    
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-admin btn-admin-primary">
+            <i class="bi bi-check-circle"></i> Add Product
+        </button>
+        <a asp-controller="Admin" asp-action="Admin" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+</form>

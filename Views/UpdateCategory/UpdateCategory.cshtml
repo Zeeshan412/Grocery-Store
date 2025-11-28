@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Update Category";
+}
+
+<h3 class="mb-4"><i class="bi bi-folder-symlink"></i> Update Category</h3>
+
+@if (TempData["CategoryMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["CategoryMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<form method="post" asp-area="" asp-controller="UpdateCategory" asp-action="UpdateCategory">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="categoryId" class="form-label">Category ID <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="categoryId" name="id" placeholder="Enter category ID" min="1" required>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="categoryName" class="form-label">New Category Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="categoryName" name="Name" placeholder="Enter new category name" required>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-admin">
+            <i class="bi bi-check-circle"></i> Update Category
+        </button>
+        <a asp-controller="Admin" asp-action="Admin" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+</form>

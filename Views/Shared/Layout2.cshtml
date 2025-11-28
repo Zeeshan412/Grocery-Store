@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - finalproject</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+    <!-- Reusable Customer Header Component -->
+    <partial name="_CustomerHeader" />
+
+    @RenderBody()
+
+    <footer class="row pt-5 pb-5 pl-5">
+        <div class="col-4">
+            <a>&#10148;About Us</a><br>
+            <a>&#10148;Terms and Conditions</a><br>
+            <a>&#10148;Privacy Policy</a><br>
+            <a>&#10148;FAQs</a><br>
+            <a>&#10148;Refunds and Exchange</a><br>
+        </div>
+        <div class="col-4">
+            <a>&#10148;Delivery</a><br>
+            <a>&#10148;Payment Methods</a><br>
+            <a>&#10148;Feedback form</a><br>
+            <a>&#10148;Product Request</a><br>
+        </div>
+        <div class="col-4">
+            <p>Connect With Us</p>
+            <span><i class="fab fa-facebook-f"></i> </span>
+            <span><i class="fab fa-twitter"></i> </span>
+            <span><i class="fab fa-instagram"></i> </span>
+            <span><i class="fab fa-linkedin-in"></i></span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        // Update cart badge count (Header functionality)
+        function updateCartBadge() {
+            $.ajax({
+                url: '@Url.Action("GetCartCount", "Cart")',
+                type: 'GET',
+                success: function(count) {
+                    $('#cartBadge').text(count || 0);
+                    if (count > 0) {
+                        $('#cartBadge').show();
+                    } else {
+                        $('#cartBadge').hide();
+                    }
+                },
+                error: function() {
+                    $('#cartBadge').hide();
+                }
+            });
+        }
+        
+        // Update cart badge on page load
+        $(document).ready(function() {
+            updateCartBadge();
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

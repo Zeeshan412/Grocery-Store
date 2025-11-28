@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="stats-card">
+            <h3><i class="bi bi-box-seam"></i> Total Products</h3>
+            <div class="stat-value">@ViewBag.TotalProducts</div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="stats-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <h3><i class="bi bi-tags"></i> Total Categories</h3>
+            <div class="stat-value">@ViewBag.TotalCategories</div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="stats-card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+            <h3><i class="bi bi-exclamation-triangle"></i> Low Stock</h3>
+            <div class="stat-value">@ViewBag.LowStockProducts</div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <h4 class="mb-3">Quick Actions</h4>
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <a asp-controller="AddProduct" asp-action="AddProduct" class="btn btn-admin btn-admin-primary w-100 py-3">
+                    <i class="bi bi-plus-circle"></i><br />
+                    Add Product
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a asp-controller="UpdateProduct" asp-action="UpdateProduct" class="btn btn-admin w-100 py-3">
+                    <i class="bi bi-pencil-square"></i><br />
+                    Edit Product
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a asp-controller="DeleteProduct" asp-action="DeleteProduct" class="btn btn-admin btn-admin-danger w-100 py-3">
+                    <i class="bi bi-trash"></i><br />
+                    Delete Product
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a asp-controller="AddCategory" asp-action="AddCategory" class="btn btn-admin w-100 py-3">
+                    <i class="bi bi-folder-plus"></i><br />
+                    Add Category
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a asp-controller="UpdateCategory" asp-action="UpdateCategory" class="btn btn-admin w-100 py-3">
+                    <i class="bi bi-folder-symlink"></i><br />
+                    Edit Category
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a asp-controller="DeleteCategory" asp-action="DeleteCategory" class="btn btn-admin btn-admin-danger w-100 py-3">
+                    <i class="bi bi-folder-x"></i><br />
+                    Delete Category
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a asp-controller="Dashboard" asp-action="Dashboard" class="btn btn-admin w-100 py-3">
+                    <i class="bi bi-house"></i><br />
+                    View Store
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

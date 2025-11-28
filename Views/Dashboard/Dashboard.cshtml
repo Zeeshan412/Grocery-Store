@@ -1,0 +1,183 @@
+﻿@model CategoryProducts
+@{
+    Layout = "~/Views/Shared/Layout2.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <!-- Dashboard specific styles if any -->
+</head>
+<body style="font-size: medium;">
+
+    <div class="container mt-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mb-0">Our Products</h2>
+            @if (!string.IsNullOrWhiteSpace(ViewBag.SearchQuery as string))
+            {
+                <div>
+                    <span class="text-muted">Search results for: "<strong>@ViewBag.SearchQuery</strong>"</span>
+                    <a href="@Url.Action("Dashboard", "Dashboard")" class="btn btn-sm btn-outline-secondary ml-2">
+                        <i class="fas fa-times"></i> Clear
+                    </a>
+                </div>
+            }
+        </div>
+        <hr style="color: rgb(207, 157, 187); font-weight: bold;">
+        <partial name="_PartialView" />
+        
+        @if (TempData["CartMessage"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin: 20px;">
+                <strong>Success!</strong> @TempData["CartMessage"]
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+
+        @if (Model.Products == null || !Model.Products.Any())
+        {
+            <div class="alert alert-info text-center" style="margin-top: 50px;">
+                <h3>No Products Available</h3>
+                <p>There are no products in the store yet.</p>
+                @if (User.IsInRole("Admin") || User.HasClaim("http://schemas.microsoft.com/ws/2008/06/identity/claims/role", "Admin"))
+                {
+                    <p><a href="/AddProduct/AddProduct" class="btn btn-primary">Add Products</a></p>
+                }
+            </div>
+        }
+        else
+        {
+            <!-- Tabs Nav -->
+            <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                @{ int i = 0; }
+                @foreach (var c in Model.Category)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link @(i == 0 ? "active" : "")" id="tab_@c.Id" data-toggle="tab" href="#category_@c.Id" role="tab" aria-controls="category_@c.Id" aria-selected="@(i == 0 ? "true" : "false")">@c.Name</a>
+                    </li>
+                    i++;
+                }
+                @if (Model.Products.Any(p => !Model.Category.Any(c => c.Id == p.CategoryId)))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab_uncategorized" data-toggle="tab" href="#uncategorized" role="tab" aria-controls="uncategorized" aria-selected="false">Other</a>
+                    </li>
+                }
+            </ul>
+
+            <!-- Tabs Content -->
+            <div class="tab-content" id="productTabsContent">
+                @{ int j = 0; }
+                @foreach (var c in Model.Category)
+                {
+                    var categoryProducts = Model.Products.Where(p => p.CategoryId == c.Id).ToList();
+                    <div class="tab-pane fade @(j == 0 ? "show active" : "")" id="category_@c.Id" role="tabpanel" aria-labelledby="tab_@c.Id">
+                        <br>
+                        @if (categoryProducts.Any())
+                        {
+                            <div class="row d-flex justify-content-center">
+                                @foreach (var product in categoryProducts)
+                                {
+                                    <div class="col-6 col-md-6 col-lg-3 mb-5 mx-4">
+                                        <div class="card h-100 bg-light shadow-sm" style="width: 20rem; cursor:pointer">
+                                            @if (!string.IsNullOrEmpty(product.ImageUrl))
+                                            {
+                                                <img src="@product.ImageUrl" alt="@product.Name" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+                                            }
+                                            <div class="card-body">
+                                                <h6 class="card-title">@product.Name</h6>
+                                                @if(product.Stock == 0)
+                                                {
+                                                    <p class="card-text">Rs.@product.Price.ToString("0.00") <span style="padding-left:10px; color: red;">Out of stock</span></p>
+                                                }
+                                                else
+                                                {
+                                                    <p class="card-text">Rs.@product.Price.ToString("0.00") <span style="color: green;">(In Stock: @product.Stock)</span></p>
+                                                }
+                                                @if(product.Stock > 0)
+                                                {
+                                                    <form action="/Dashboard/Dashboard" method="post">
+                                                        <input type="hidden" name="ProductName" value="@product.Name" />
+                                                        <input type="hidden" name="Price" value="@product.Price" />
+                                                        <input type="hidden" name="ImageUrl" value="@product.ImageUrl" />
+                                                        <label for="Qty_@product.Name">Qty:</label>
+                                                        <input type="number" id="Qty_@product.Name" name="Stock" placeholder="0" style="width: 60px;" min="1" max="@product.Stock" value="1" required>
+                                                        <button type="submit" class="btn btn-dark mt-2"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                                    </form>
+                                                }
+                                                else
+                                                {
+                                                    <button type="button" class="btn btn-secondary mt-2" disabled>Out of Stock</button>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p>No products in this category.</p>
+                        }
+                    </div>
+                    j++;
+                }
+
+                <!-- Uncategorized Tab -->
+                @{
+                    var uncategorizedProducts = Model.Products.Where(p => !Model.Category.Any(c => c.Id == p.CategoryId)).ToList();
+                }
+                @if (uncategorizedProducts.Any())
+                {
+                    <div class="tab-pane fade" id="uncategorized" role="tabpanel" aria-labelledby="tab_uncategorized">
+                        <br>
+                        <div class="row d-flex justify-content-center">
+                            @foreach (var product in uncategorizedProducts)
+                            {
+                                <div class="col-6 col-md-6 col-lg-3 mb-5 mx-4">
+                                    <div class="card h-100 bg-light shadow-sm" style="width: 20rem; cursor:pointer">
+                                        @if (!string.IsNullOrEmpty(product.ImageUrl))
+                                        {
+                                            <img src="@product.ImageUrl" alt="@product.Name" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+                                        }
+                                        <div class="card-body">
+                                            <h6 class="card-title">@product.Name</h6>
+                                            @if(product.Stock == 0)
+                                            {
+                                                <p class="card-text">Rs.@product.Price.ToString("0.00") <span style="padding-left:10px; color: red;">Out of stock</span></p>
+                                            }
+                                            else
+                                            {
+                                                <p class="card-text">Rs.@product.Price.ToString("0.00") <span style="color: green;">(In Stock: @product.Stock)</span></p>
+                                            }
+                                            @if(product.Stock > 0)
+                                            {
+                                                <form action="/Dashboard/Dashboard" method="post">
+                                                    <input type="hidden" name="ProductName" value="@product.Name" />
+                                                    <input type="hidden" name="Price" value="@product.Price" />
+                                                    <input type="hidden" name="ImageUrl" value="@product.ImageUrl" />
+                                                    <label for="Qty_@product.Name">Qty:</label>
+                                                    <input type="number" id="Qty_@product.Name" name="Stock" placeholder="0" style="width: 60px;" min="1" max="@product.Stock" value="1" required>
+                                                    <button type="submit" class="btn btn-dark mt-2"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                                </form>
+                                            }
+                                            else
+                                            {
+                                                <button type="button" class="btn btn-secondary mt-2" disabled>Out of Stock</button>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</body>
+</html>

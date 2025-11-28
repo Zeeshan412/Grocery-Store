@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" style="padding: 15px 0;">
+    <div class="container-fluid">
+        <!-- Brand/Logo -->
+        <a class="navbar-brand font-weight-bold" asp-controller="Dashboard" asp-action="Dashboard" style="font-size: 28px; color: #2c3e50; text-decoration: none;">
+            <i class="fas fa-shopping-bag"></i> Grossbox.pk
+        </a>
+        
+        <!-- Search Form -->
+        <form class="d-flex mx-auto" style="max-width: 500px; flex: 1;" method="get" asp-controller="Dashboard" asp-action="Dashboard">
+            <div class="input-group" style="width: 100%;">
+                <input type="text" 
+                       class="form-control" 
+                       name="searchQuery" 
+                       id="searchInput"
+                       placeholder="Search products..." 
+                       value="@ViewBag.SearchQuery"
+                       style="border-radius: 25px 0 0 25px; height: 45px; padding-left: 20px;">
+                <button class="btn btn-dark" 
+                        type="submit" 
+                        style="border-radius: 0 25px 25px 0; height: 45px; padding: 0 25px;">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </form>
+        
+        <!-- Right Side Items -->
+        <div class="d-flex align-items-center gap-3">
+            <!-- Home Link -->
+            <a class="nav-link" 
+               asp-controller="Dashboard" 
+               asp-action="Dashboard" 
+               style="color: #2c3e50; font-weight: 500; text-decoration: none;">
+                <i class="fas fa-home"></i> Home
+            </a>
+            
+            <!-- Contact Link -->
+            <a class="nav-link" 
+               href="#" 
+               style="color: #2c3e50; font-weight: 500; text-decoration: none;">
+                <i class="fas fa-phone"></i> Contact
+            </a>
+            
+            <!-- Cart Icon with Badge -->
+            <a class="nav-link position-relative" 
+               asp-controller="Cart" 
+               asp-action="Cart" 
+               style="color: #2c3e50; font-size: 20px; text-decoration: none;">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge badge-danger position-absolute" 
+                      style="top: -5px; right: -5px; background-color: #e74c3c; border-radius: 50%; padding: 2px 6px; font-size: 10px;" 
+                      id="cartBadge">0</span>
+            </a>
+            
+            <!-- Login Partial -->
+            <partial name="_LoginPartial" />
+        </div>
+    </div>
+</nav>
+

@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Delete Category";
+}
+
+<h3 class="mb-4"><i class="bi bi-folder-x text-danger"></i> Delete Category</h3>
+
+<div class="alert alert-warning">
+    <i class="bi bi-exclamation-triangle"></i> <strong>Warning:</strong> This action cannot be undone. The category will be permanently deleted. Make sure no products are using this category.
+</div>
+
+@if (TempData["CategoryMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["CategoryMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<form method="post" asp-area="" asp-controller="DeleteCategory" asp-action="DeleteCategory" onsubmit="return confirm('Are you sure you want to delete this category? This action cannot be undone.');">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label for="categoryId" class="form-label">Category ID <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="categoryId" name="id" placeholder="Enter category ID to delete" min="1" required>
+                <small class="form-text text-muted">Enter the ID of the category you want to delete</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-admin btn-admin-danger">
+            <i class="bi bi-trash"></i> Delete Category
+        </button>
+        <a asp-controller="Admin" asp-action="Admin" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+        </div>
+</form>
