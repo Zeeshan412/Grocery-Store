@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - finalproject</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar h-50">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="font-size: 30px; color: black;">Grossbox.pk</a>
+            </div>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control h-70" placeholder="Search" style="height: 40px; width:300px">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-search" style="height: 10px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <a class="glyphicon glyphicon-earphone" style="color: black; cursor:pointer;"> CONTACTUS</a>
+            <a class="pl-3 pt-4" style="color: black; cursor:pointer;" asp-area="" asp-controller="Dashboard" asp-action="Dashboard">Home</a>
+            <a class="fas fa-shopping-cart pt-3 pr-3" style="color: aliceblue; cursor: pointer;" asp-area="" asp-controller="Cart" asp-action="Cart"></a>
+            <partial name="_LoginPartial" />
+
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <footer class="row pt-5 pb-5 pl-5">
+        <div class="col-4">
+            <a>&#10148;About Us</a><br>
+            <a>&#10148;Terms and Conditions</a><br>
+            <a>&#10148;Privacy Policy</a><br>
+            <a>&#10148;FAQs</a><br>
+            <a>&#10148;Refunds and Exchange</a><br>
+        </div>
+        <div class="col-4">
+            <a>&#10148;Delivery</a><br>
+            <a>&#10148;Payment Methods</a><br>
+            <a>&#10148;Feedback form</a><br>
+            <a>&#10148;Product Request</a><br>
+        </div>
+        <div class="col-4">
+            <p>Connect With Us</p>
+            <span><i class="fab fa-facebook-f"></i> </span>
+            <span><i class="fab fa-twitter"></i> </span>
+            <span><i class="fab fa-instagram"></i> </span>
+            <span><i class="fab fa-linkedin-in"></i></span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

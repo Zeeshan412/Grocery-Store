@@ -1,0 +1,154 @@
+﻿@{
+    decimal total = 0;
+}
+
+
+
+
+
+@model List<Product>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Added for arrow icons -->
+    <style>
+        body {
+            padding-top: 10px;
+            background-repeat: no-repeat;
+            background-image: url('../images/hello.jpg');
+            background-size: 530px;
+            /* background-position-y: 100px; */
+            background-position: left;
+            background-color: #ffffff; /* White background */
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 30px; /* Adjusted padding */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 30px auto;
+            max-width: 400px;
+            color: #333; /* Adjusted text color */
+            height: 500px; /* Added fixed height */
+            overflow-y: auto; /* Added overflow for scrolling */
+        }
+
+            .card #orderno {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .card .title {
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .card .sub-title {
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .card .row-main {
+                margin-bottom: 15px;
+            }
+
+            .card .col img {
+                max-width: 80px;
+                height: auto;
+            }
+
+            .card .col-6 p {
+                margin: 0;
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            .card .col-3, .card .col-6 {
+                display: flex;
+                align-items: center;
+            }
+
+                .card .col-3:last-child {
+                    justify-content: flex-end;
+                }
+
+            .card .total {
+                margin-top: 20px;
+            }
+
+        .btn-lg {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+
+        .arrow-icon {
+            font-size: 18px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="col d-flex"><span id="orderno">order #546924</span></div>
+            <div class="title mx-auto"> Thank you for your order! </div>
+            <div class="main">
+                <span class="sub-title">
+                    <p><b>Payment Summary</b></p>
+                </span>
+                @foreach (var product in Model)
+                {
+                    total += product.Price * product.Stock;
+                    <div class="row row-main">
+                        <div class="col-3"> <img class="img-fluid" src="@product.ImageUrl"> </div>
+                        <div class="col-6">
+                            <div class="row d-flex">
+                                <p><b>@product.Name</b></p>
+                            </div>
+
+                        </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <p><b>$@product.Price</b></p>
+                        </div>
+                    </div>
+                    <div class="row row-main">
+                        <div class="col-9"> <!-- Empty column to maintain alignment --> </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <p>Quantity: @product.Stock</p>
+                        </div>
+                    </div>
+                }
+                <hr>
+                <div class="total">
+                    <div class="row">
+                        <div class="col"> <b>Total:</b> </div>
+                        <div class="col d-flex justify-content-end"> <b>$@total</b> </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <a asp-area="" asp-controller="Dashboard" asp-action="Dashboard" class="btn btn-dark" style="color:white"><i class="fas fa-arrow-left"></i> Back to Shop</a>
+                    <a asp-area="" asp-controller="Cart" asp-action="Track" class="btn btn-dark" style="color:white">Track Your Order <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

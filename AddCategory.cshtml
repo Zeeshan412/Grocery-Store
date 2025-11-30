@@ -1,0 +1,30 @@
+﻿@page
+@model WebApplication4.Views.AddCategory.AddModel;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Add Category</h1>
+        <form method="post" asp-area="" asp-controller="AddCategory" asp-action="AddCategory">
+            <div class="form-group">
+                <label for="productName">Category Name</label>
+                <input type="text" class="form-control" id="productName" name="Name" placeholder="Enter Category name">
+            </div>
+            <button type="submit" class="btn btn-dark">ADD</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿@page
+@model WebApplication4.Views.UpdateProduct.UpdateProductModel
+@{
+}
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Update Product</h1>
+        <form method="post" action="/UpdateProduct/UpdateProduct" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="productName">Enter Product Name For which you want to update:</label>
+                <input type="text" class="form-control" id="productName" name="Name" placeholder="Enter product name">
+            </div>
+
+            <div class="form-group">
+                <label for="price">Enter New Price</label>
+                <input type="number" class="form-control" id="price" name="Price" placeholder="Enter product price">
+            </div>
+            <div class="form-group">
+                <label for="stock">Enter New Stock:</label>
+                <input type="number" class="form-control" id="image" name="Stock" placeholder="Enter Quantity in Stock:" min="1">
+            </div>
+            <button type="submit" class="btn btn-dark">UPDATE</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

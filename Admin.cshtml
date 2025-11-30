@@ -1,0 +1,92 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2e0dd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 60%;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            margin: 10px; /* Adjusted margin */
+            padding: 35px 25px; /* Increased padding */
+            background-color: black;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px; /* Increased width */
+        }
+
+            .button:hover {
+                background-color: #3b3b3b;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Panel Functions</h1>
+        <div class="button-container">
+            <div class="button-row">
+                <a asp-area="" asp-controller="AddProduct" asp-action="AddProduct" class="button">Add Product</a>
+                <a asp-area="" asp-controller="UpdateProduct" asp-action="UpdateProduct" class="button">Edit Product</a>
+                <a asp-area="" asp-controller="DeleteProduct" asp-action="DeleteProduct" class="button">Remove Product</a>
+            </div>
+            <div class="button-row">
+                <a asp-area="" asp-controller="AddCategory" asp-action="AddCategory" class="button">Add Category</a>
+                <a asp-area="" asp-controller="UpdateCategory" asp-action="UpdateCategory" class="button">Edit Category</a>
+                <a asp-area="" asp-controller="DeleteCategory" asp-action="DeleteCategory" class="button">Remove Category</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+﻿@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Checkout Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-image: url('../images/hello.jpg');
+            background-size: 530px;
+            background-position-y: 100px;
+            background-position: left;
+            background-color: #ffffff; /* White background */
+            padding-left:200px;        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: 100px; /* Add margin to the top */
+            margin-bottom: 100px; /* Add margin to the top */
+        }
+
+        .cart-container {
+            width: 50%;
+            background-color: #f2f2f2;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+            .item img {
+                width: 60px;
+                height: auto;
+                margin-right: 15px;
+            }
+
+        .item-details {
+            font-size: 18spx;
+        }
+
+        .total {
+            font-weight: bold;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        .address-form {
+            margin-top: 30px;
+        }
+
+            .address-form input {
+                width: 100%;
+                margin-bottom: 15px;
+                font-size: 16px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cart-container">
+            <h2>Cart Summary</h2>
+            @{
+                decimal total = 0;
+            }
+            @foreach (var product in Model)
+            {
+                var subtotal = product.Price * product.Stock;
+                total += subtotal;
+                <div class="item">
+                    <div><img src="@product.ImageUrl" alt="@product.Name"></div>
+                    <div class="item-details">
+                        <div>@product.Name</div>
+                        <div>Price: $@product.Price</div>
+                        <div>Stock: @product.Stock</div>
+                    </div>
+                    <div>@subtotal</div>
+                </div>
+            }
+            <div class="total">
+                Total: $@total
+            </div>
+            <div class="address-form">
+                <h3>Shipping Address</h3>
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Address">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Zip Code">
+            </div>
+            <div class="actions">
+                <a asp-area="" asp-controller="Dashboard" asp-action="Dashboard" class="btn btn-dark" style="color:white"><i class="fas fa-arrow-left"></i> Back to Shop</a>
+                <a asp-area="" asp-controller="Cart" asp-action="Thankyou" class="btn btn-dark" style="color:white">Checkout <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ *@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Checkout Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-image: url('../images/hello.jpg');
+            background-size: 530px;
+            background-position-y: 100px;
+            background-position: left;
+            background-color: #ffffff; /* White background */
+            padding-left: 200px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: 100px; /* Add margin to the top */
+            margin-bottom: 100px; /* Add margin to the top */
+        }
+
+        .cart-container {
+            width: 50%;
+            background-color: #f2f2f2;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+            .item img {
+                width: 60px;
+                height: auto;
+                margin-right: 15px;
+            }
+
+        .item-details {
+            font-size: 18px;
+        }
+
+        .total {
+            font-weight: bold;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        .address-form {
+            margin-top: 30px;
+        }
+
+            .address-form input {
+                width: 100%;
+                margin-bottom: 15px;
+                font-size: 16px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cart-container">
+            <h2>Cart Summary</h2>
+            <form method="post" action="/Cart/ThankYou">
+                @{
+                    decimal total = 0;
+                    int index = 0;
+                }
+                @foreach (var product in Model)
+                {
+                    var subtotal = product.Price * product.Stock;
+                    total += subtotal;
+                    <div class="item">
+                        <div><img src="@product.ImageUrl" alt="@product.Name"></div>
+                        <div class="item-details">
+                            <div>@product.Name</div>
+                            <div>Price: $@product.Price</div>
+                            <div>Quantity: @product.Stock</div>
+                        </div>
+                        <div>@subtotal</div>
+                        <input type="hidden" name="ProductIDs[@index]" value="@product.Id" />
+                        <input type="hidden" name="Quantities[@index]" value="@product.Stock" />
+                        <input type="hidden" name="Prices[@index]" value="@product.Price" />
+                    </div>
+                    index++;
+                }
+                <div class="total">
+                    Total: $@total
+                    <input type="hidden" name="Total" value="@total" />
+                </div>
+                <div class="address-form">
+                    <h3>Shipping Address</h3>
+                    <input type="text" name="FullName" placeholder="Full Name" required>
+                    <input type="text" name="Address" placeholder="Address" required>
+                    <input type="text" name="City" placeholder="City" required>
+                    <input type="text" name="State" placeholder="State" required>
+                    <input type="text" name="ZipCode" placeholder="Zip Code" required>
+                </div>
+                <div class="actions">
+                    <a asp-area="" asp-controller="Dashboard" asp-action="Dashboard" class="btn btn-dark" style="color:white"><i class="fas fa-arrow-left"></i> Back to Shop</a>
+                    <button type="submit" class="btn btn-dark" style="color:white">Checkout <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
