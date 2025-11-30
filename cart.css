@@ -1,0 +1,35 @@
+/*body {
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    background-image: url('../images/hello.jpg');
+    background-size: 530px;
+    background-position-y: 100px;
+    background-position: left;
+    background-color: #ffffff;*/ /* White background */
+/*}*/
+.container
+{
+    display:flex;
+    flex-direction: column;
+    border:1px solid black; 
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+.itemheader
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    padding-left: 250px;
+}
+.item
+{
+    display:flex;
+    flex-direction: row;
+}
+.item >span{
+    padding-left: 140px;
+    padding-top: 40px;
+
+}
