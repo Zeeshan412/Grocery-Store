@@ -19,7 +19,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using System.Security.Claims;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 
 
 namespace WebApplication4.Areas.Identity.Pages.Account

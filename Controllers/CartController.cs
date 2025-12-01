@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 using Microsoft.EntityFrameworkCore;
 using WebApplication4.BusinessLogic.Services;
 

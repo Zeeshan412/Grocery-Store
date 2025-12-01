@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebApplication4.DataLayer.DbContext;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 
 namespace WebApplication4.BusinessLogic.Services
 {

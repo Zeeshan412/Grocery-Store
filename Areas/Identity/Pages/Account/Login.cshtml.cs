@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 using WebApplication4.BusinessLogic.Services;
 
 namespace WebApplication4.Areas.Identity.Pages.Account

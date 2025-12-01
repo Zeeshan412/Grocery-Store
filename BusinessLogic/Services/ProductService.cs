@@ -1,5 +1,5 @@
 using System.Linq;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 using WebApplication4.DataLayer.Repositories;
 
 namespace WebApplication4.BusinessLogic.Services

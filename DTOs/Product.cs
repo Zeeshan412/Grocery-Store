@@ -1,4 +1,4 @@
-namespace WebApplication4.Entities
+namespace WebApplication4.DTOs
 {
     public class Product
     {

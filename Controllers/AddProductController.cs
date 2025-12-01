@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 using System.Linq;
 using WebApplication4.BusinessLogic.Services;
 

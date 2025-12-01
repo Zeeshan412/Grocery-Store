@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using NuGet.Protocol.Core.Types;
 using System.Linq;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 using WebApplication4.BusinessLogic.Services;
 
 namespace WebApplication4.Controllers

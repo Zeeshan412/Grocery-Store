@@ -10,8 +10,8 @@ using System.Text;
 using WebApplication4.DataLayer.DbContext;
 using WebApplication4.DataLayer.Initializers;
 
-// Application Entities
-using WebApplication4.Entities;
+// Application DTOs
+using WebApplication4.DTOs;
 
 // Application Business Logic
 using WebApplication4.BusinessLogic.Factories;

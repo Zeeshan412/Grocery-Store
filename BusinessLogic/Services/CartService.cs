@@ -1,6 +1,6 @@
 using System.Linq;
 using Newtonsoft.Json;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 using Microsoft.AspNetCore.Http;
 
 namespace WebApplication4.BusinessLogic.Services

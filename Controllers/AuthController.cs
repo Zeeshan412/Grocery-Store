@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 using WebApplication4.BusinessLogic.Services;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 
 namespace WebApplication4.Controllers
 {

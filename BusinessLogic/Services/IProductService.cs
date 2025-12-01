@@ -1,4 +1,4 @@
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 
 namespace WebApplication4.BusinessLogic.Services
 {

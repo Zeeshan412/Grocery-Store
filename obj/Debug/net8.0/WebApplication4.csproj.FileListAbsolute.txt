@@ -597,3 +597,4 @@ C:\Users\Zeeshan\Downloads\Compressed\Grocery_Store-main\Grocery_Store-main\obj\
 C:\Users\Zeeshan\Downloads\Compressed\Grocery_Store-main\Grocery_Store-main\obj\Debug\net8.0\WebApplication4.genruntimeconfig.cache
 C:\Users\Zeeshan\Downloads\Compressed\Grocery_Store-main\Grocery_Store-main\obj\Debug\net8.0\ref\WebApplication4.dll
 C:\Users\Zeeshan\Downloads\Compressed\Grocery_Store-main\Grocery_Store-main\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Zeeshan\Downloads\Compressed\Grocery_Store-main\Grocery_Store-main\obj\Debug\net8.0\WebApplication4.sourcelink.json

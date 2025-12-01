@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication4.BusinessLogic.Services;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 
 namespace WebApplication4.Controllers
 {

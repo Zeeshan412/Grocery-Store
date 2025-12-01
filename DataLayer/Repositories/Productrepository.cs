@@ -1,5 +1,5 @@
 using Microsoft.Data.SqlClient;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 
 namespace WebApplication4.DataLayer.Repositories
 {

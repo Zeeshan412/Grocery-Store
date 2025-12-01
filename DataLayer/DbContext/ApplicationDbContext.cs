@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WebApplication4.Entities;
+using WebApplication4.DTOs;
 
 namespace WebApplication4.DataLayer.DbContext
 {
